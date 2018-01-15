@@ -21,6 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stellamoretti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "stellamoretti/stella.moretti.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 twitter_username:
 github_username:  stellamoretti
 
@@ -31,6 +32,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
   - _plugins/related_posts.rb
 
 # Outputting
@@ -49,3 +51,17 @@ timezone: America/New_York
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
