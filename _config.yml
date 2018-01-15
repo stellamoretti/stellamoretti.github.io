@@ -30,6 +30,8 @@ markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - _plugins/related_posts.rb
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
