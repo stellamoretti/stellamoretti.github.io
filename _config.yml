@@ -25,6 +25,11 @@ repository: "stellamoretti/stella.moretti.github.io" # GitHub username/repo-name
 twitter_username:
 github_username:  stellamoretti
 
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+
 # Build settings
 markdown: kramdown
 # theme: minima
