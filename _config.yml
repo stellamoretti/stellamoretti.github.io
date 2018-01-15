@@ -33,6 +33,11 @@ plugins:
   - jekyll-paginate
   - _plugins/related_posts.rb
 
+# Outputting
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/New_York
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
