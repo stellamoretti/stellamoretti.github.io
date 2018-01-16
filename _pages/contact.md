@@ -1,4 +1,4 @@
 ---
-permalink: /contact
+permalink: /contact/
 title: "Contact"
 ---
