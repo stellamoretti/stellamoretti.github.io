@@ -25,6 +25,10 @@ repository: "stellamoretti/stella.moretti.github.io" # GitHub username/repo-name
 twitter_username:
 github_username:  stellamoretti
 
+name: &name "Stella Moretti" # &name is a YAML anchor which can be *referenced later
+
+words_per_minute: 200
+
 # Reading Files
 include:
   - .htaccess
@@ -41,7 +45,7 @@ plugins:
   - _plugins/related_posts.rb
 
 # Outputting
-permalink: /:categories/:title/
+#permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York
@@ -70,4 +74,45 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      #related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Site Author
+author:
+  name             : #*name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "/images/profile/stella.jpg"
+  bio              : "Data Scientist"
+  location         : "New York, NY"
+  email            :
+  uri              :
+  home             :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : *facebook
+  foursquare       :
+  github           : "stellamoretti"
+  gitlab           :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "stellamoretti/"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # https://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : #*twitter
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
